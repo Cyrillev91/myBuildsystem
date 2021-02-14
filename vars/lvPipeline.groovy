@@ -73,7 +73,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 			echo 'Running diff...'
 		
 			// If this change is a pull request, diff the VIs.
-			if (env.CHANGE_ID) {
+			//if (env.CHANGE_ID) {
 				stage ('Diff VIs'){
 					
 					try {
@@ -86,7 +86,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 						echo "Diff Failed: ${err}"
 					}
 				}
-			}
+			//}
 		}
 	}
 }
