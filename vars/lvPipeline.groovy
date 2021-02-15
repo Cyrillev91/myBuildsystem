@@ -88,10 +88,6 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 				}
 			}
 		}
-		
-		stage('Post Clean') {
-			postClean()
-		}
 	}
 }
 
